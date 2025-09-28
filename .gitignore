@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+*.env
+
+# FAISS Index
+faiss_index/
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store

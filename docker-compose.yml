@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8001:8000"
+    # This allows the backend to connect to Ollama on the host
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "8501:8501"
+    depends_on:
+      - backend
