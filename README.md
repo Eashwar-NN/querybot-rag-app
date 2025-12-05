@@ -67,7 +67,8 @@ querybot/
 │   └── requirements.txt      # Frontend dependencies
 ├── evaluation/               # QA & Testing Harness
 │   ├── gen_testset.py        # Generates synthetic test questions from PDFs
-│   └── evaluate.py           # Runs Ragas metrics using "LLM-as-a-Judge"
+│   ├── evaluate.py           # Runs Ragas metrics using "LLM-as-a-Judge"
+│   └── transformer.pdf       # Document for testing
 ├── docker-compose.yml        # Defines the 6-container cluster
 ├── .gitignore
 └── README.md
