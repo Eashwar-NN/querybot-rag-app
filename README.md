@@ -69,7 +69,8 @@ querybot/
 │   ├── gen_testset.py        # Generates synthetic test questions from PDFs
 │   └── evaluate.py           # Runs Ragas metrics using "LLM-as-a-Judge"
 ├── docker-compose.yml        # Defines the 6-container cluster
-└── .gitignore
+├── .gitignore
+└── README.md
 
 
 🚀 Getting Started
