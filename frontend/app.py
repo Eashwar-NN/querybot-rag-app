@@ -3,7 +3,7 @@ import requests
 import time
 
 # Define the base URL for the backend API
-BACKEND_URL = "http://backend:8000"
+BACKEND_URL = "http://fastapi-server:8000"
 
 st.title("📄 QueryBot Interface")
 st.write("Welcome! This tool allows you to ask questions about a technical document.")
@@ -30,7 +30,7 @@ if st.button("Upload and Process"):
                 response = requests.post(f"{BACKEND_URL}/upload", files=files)
 
                 # Check the response from the backend
-                if response.status_code == 200:
+                if response.status_code in [200, 202]:
                     st.success("✅ File successfully uploaded and processed!")
                     st.info("You can now ask questions about the document below.")
                 else:
